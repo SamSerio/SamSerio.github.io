@@ -1,35 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 
-
-<html>
-
+<html lang="en">
 
 <head>
-
-<link rel="stylesheet" href="app.css"/>
-
-<title>Hydeaway Designs</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Design</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Haley Hyde is good at landscaping</h1>
+    <section id="title">
+        <h1>Hydeaway Designs</h1>
+        <p>Making your home more beautiful</p>
+    </section>
 
-<p></p>
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="gallery">
+            <img src="gator.jpg" alt="Garden 1">
+            <img src="garden2.jpg" alt="Garden 2">
+            <img src="shoebill.jpg" alt="Garden 3">
+            <img src="garden4.jpg" alt="Garden 4">
+        </div>
+    </section>
 
-<button onclick="alertButton()">Click Me</button>
+    <section id="about">
+        <h2>About Our Firm</h2>
+        <p>Welcome to our landscape design firm. We specialize in creating unique gardens that enhance the natural beauty of your property. Our team has decades of experience and a passion for design.</p>
+    </section>
 
-<template>
-    <h2>Design</h2>
-    
-</template>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Consultation</h3>
+            <p>On-site consultation and property analysis</p>
+        </div>
+        <div class="service">
+            <h3>Design</h3>
+            <p>Landscape design that enhances the site’s natural beauty</p>
+        </div>
+        <div class="service">
+            <h3>Site Preparation</h3>
+            <p>Site preparation and installation of garden accents and plants</p>
+        </div>
+        <div class="service">
+            <h3>Coordination</h3>
+            <p>Coordination with architects, builders, and interior designers</p>
+        </div>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Landscape Design, Inc.</p>
+    </footer>
 </body>
-
-<script src = "app.js"></script>
-
 </html>
